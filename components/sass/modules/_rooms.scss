@@ -1,0 +1,49 @@
+#rooms {
+
+    header {
+        
+        @include breakpoint($medium) { 
+            
+        }//brkpt
+    }//header
+    
+    .room {
+            
+            
+            @include breakpoint($small) { 
+            
+
+        }//brkpt
+        ;
+        
+        .content {
+            
+            
+            h1 {
+                
+                
+            }//h1
+            
+        } //content
+
+        
+    } //.room
+
+   /* #piccadilly { @include backImage('../images/hotel/rooms_piccadilly.jpg');}
+    #cambridge { @include backImage('../images/hotel/rooms_cambridge.jpg');}
+    #westminster {@include backImage('../images/hotel/rooms_westminster.jpg');}
+    #oxford {@include backImage('../images/hotel/rooms_oxford.jpg');}
+    #victoria {@include backImage('../images/hotel/rooms_victoria.jpg');}
+    #manchester {@include backImage('../images/hotel/rooms_manchester.jpg');} */
+    
+}//#rooms
+
+
+
+
+
+
+
+
+
+

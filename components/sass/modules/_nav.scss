@@ -1,0 +1,93 @@
+
+header #nav {
+    
+    
+    .navbar {
+        
+        
+        .brand {
+            
+            
+            a {
+                
+                
+                @include breakpoint(max-width $small) { 
+                    
+                    
+                    span {
+                        
+                    } //span
+            
+                } //brkpt
+                
+            } //a
+            
+        } // brand
+        
+        ul {
+            
+        
+            li {
+              
+                
+                a {
+                    
+                    
+                    //icon styles
+                    
+                    
+                    /* &.info { background-image: url("../images/icons/info.png"); } 
+                    &.rooms { background-image: url("../images/icons/rooms.png"); } 
+                    &.dining { background-image: url("../images/icons/dining.png"); } 
+                    &.events { background-image: url("../images/icons/events.png"); } 
+                    &.attractions { background-image: url("../images/icons/attractions.png"); } */
+                    
+                    &:hover, &:focus {
+                        
+                    } //hover
+                    
+                    @include breakpoint(0 $small) { 
+                        
+                        
+                        &::after {
+                            
+                        }
+                        
+                        span {
+                            
+                        }
+                    }//brkpt
+                    
+                    @include breakpoint($small $medium) { 
+                        
+                        
+                        &.icon {
+                            
+                        }
+                    }//brkpt
+                    
+                    &.active {
+                        
+                    }
+                    
+                } //a
+                
+            } //li  
+            
+        } //ul
+        
+    } //navbar
+    
+    
+} // header #nav
+
+
+
+
+
+
+
+
+
+
+

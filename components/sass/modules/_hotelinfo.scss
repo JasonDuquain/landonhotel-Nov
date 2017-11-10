@@ -1,0 +1,75 @@
+#hotelinfo {
+    
+
+    h1, h2, h3, h4, h5, h6 {
+        
+    }
+
+    .heading {
+        h1 {
+            
+        }
+    }
+
+    #usefulinfo {
+        
+        section {
+            @include breakpoint($small) {
+                
+            } //breakpoint
+            @include breakpoint(450px $small) {
+                &.checklist {
+                    
+                        } //checklist
+            } //breakpoint
+
+            h2 {
+                
+            }//h2
+
+            p {
+                
+            } //p
+
+            ul {
+                li {
+                    
+                } //li
+            } //ul
+        } //section
+        
+        section#arrivalinfo {
+             
+            ul {
+              
+                
+                li {
+                    
+                    
+                    strong {
+                        
+                    }//strong
+                    
+                    &:first-child {
+                        
+                    }
+                    
+                }//li
+                
+                
+            } //ul
+        }//section#arrivalinfo
+        
+        
+    } //useful info
+    
+    #greenprogram {
+        
+        
+        @include breakpoint($wide) { 
+            
+        }//brkpt       
+ 
+    }//greenprogram
+       
+} //hotelinfo

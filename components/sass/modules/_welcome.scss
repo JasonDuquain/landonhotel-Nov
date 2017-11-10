@@ -1,0 +1,45 @@
+
+#welcome {
+    
+    
+    article {
+        
+        
+        @include breakpoint($small) { 
+            
+        }//brkpt
+        
+    } //article
+    
+    h1 {
+        
+    }//h1
+    
+    .gallery {
+        
+        
+        img {
+            
+            
+            @include breakpoint($small) { 
+                
+            }//brkpt
+            
+            @include breakpoint($medium) { 
+                
+            }//brkpt
+            
+        }//img
+        
+    } //.gallery
+    
+} //#welcome
+
+
+
+
+
+
+
+
+

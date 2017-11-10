@@ -1,0 +1,34 @@
+
+
+body {
+  
+}
+
+.scene {
+  
+    
+    article {
+        
+    }
+
+    @include breakpoint($wide) { 
+        
+    }//brkpt
+    
+    @include breakpoint($medium) { 
+        
+        article {
+            
+        }
+        
+    }//brkpt
+    
+}//scene
+
+
+
+
+
+
+
+

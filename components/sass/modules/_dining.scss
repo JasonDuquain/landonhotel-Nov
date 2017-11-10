@@ -1,0 +1,50 @@
+
+#dining {
+   
+    h1, h2 {
+        
+    }
+    
+    img {
+        
+    }//img
+    
+    @include breakpoint($small) { 
+        #areadining {
+           
+            
+            h1 {
+                
+            }//h1
+            
+            p {
+                
+            }//p
+            
+        }//areadining
+        
+        section {
+            
+            
+            h2 {
+                
+            }//h2
+            
+            p {
+                
+            }//p
+            
+        }//section
+        
+    }//brkpt
+    
+    #roomservice {
+        
+        
+    }//#roomsvc
+    
+    
+}//#dining
+
+
+

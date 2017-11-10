@@ -1,0 +1,45 @@
+
+#events {
+    
+    
+    .event {
+        
+        @include breakpoint($small) { 
+            
+        }//brkpt
+        
+        .content {
+            
+            
+            h2 {
+                
+                
+            }//h2
+            
+            p {
+                
+            }//p
+        } //content
+        
+    } //event
+    
+    #businessmeetings {
+        
+    } //businessmeetings
+    
+    #weddings {
+         
+    }//weddings
+    
+    
+}//#events
+
+
+
+
+
+
+
+
+
+
