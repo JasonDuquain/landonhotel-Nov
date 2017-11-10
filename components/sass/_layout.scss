@@ -10,17 +10,19 @@ body {
     padding: 20px 0;
     
     article {
-        
+        max-width: 95%;
+        margin: 0 auto;
     }
 
     @include breakpoint($wide) { 
-        
+        padding: 40px 0;    
     }//brkpt
     
     @include breakpoint($medium) { 
         
         article {
-            
+            max-width: 60em;
+            margin: 0 auto;
         }
         
     }//brkpt

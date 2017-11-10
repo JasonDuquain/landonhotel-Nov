@@ -1,61 +1,93 @@
 #hotelinfo {
-    
+    background-image: linear-gradient(darken($purple, 20), $green);
+    color: $light;
 
     h1, h2, h3, h4, h5, h6 {
-        
+        color: $light;    
     }
 
     .heading {
         h1 {
-            
+            font-size: 3em;
+            font-weight: $thin;
         }
     }
 
     #usefulinfo {
+        @include breakpoint($small) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 1.5em;
+        } 
+        
+        @include breakpoint(450px $small) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1em;    
+        } //breakpoint
         
         section {
             @include breakpoint($small) {
-                
+                grid-column: span 1;    
             } //breakpoint
+            
             @include breakpoint(450px $small) {
+                &#arrivalinfo {
+                   grid-column: 1 / -1;
+                    grid-row: 1/2;
+                }
+                
                 &.checklist {
-                    
-                        } //checklist
+                    grid-column: span 1;
+                    grid-row: 2/3;
+                } //checklist
             } //breakpoint
 
-            h2 {
-                
+           h2 {
+               color: lighten($purple, 20);
+                font-size: 1.3em;
+                line-height: 110%;
+                padding: 10px 0;
             }//h2
 
             p {
-                
+               font-size: 1em;
+                line-height: 130%;
             } //p
 
             ul {
+                list-style-type: square;
                 li {
+                   margin-left: 10%;
+                    line-height: 115%;
+                    margin-bottom: 5px;
                     
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
                 } //li
             } //ul
         } //section
         
         section#arrivalinfo {
-             
             ul {
-              
+                margin: 0;     
                 
                 li {
-                    
+                    list-style-type: none;
+                    border-top: 1px solid $light;
+                    padding: 15px 0;
+                    margin-left: 0;
                     
                     strong {
-                        
+                        color: $yellow;    
                     }//strong
                     
                     &:first-child {
-                        
+                        border-top: none;    
                     }
                     
                 }//li
-                
                 
             } //ul
         }//section#arrivalinfo
@@ -64,10 +96,18 @@
     } //useful info
     
     #greenprogram {
-        
+        background-color: rgba(darken($green, 30), .8);
+        margin-top: 20px;
+        border: 1px solid $light;
+        padding: 20px;
+        border-radius: 20px;
         
         @include breakpoint($wide) { 
-            
+            background-image: url("../images/misc/greenplanet.png");
+            background-repeat: no-repeat;
+            background-size: 400px;
+            background-position: 120% center;
+            padding-right: 300px;
         }//brkpt       
  
     }//greenprogram

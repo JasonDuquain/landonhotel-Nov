@@ -64,6 +64,16 @@ body {
 .scene {
   position: relative;
   padding: 20px 0; }
+  .scene article {
+    max-width: 95%;
+    margin: 0 auto; }
+  @media (min-width: 1200px) {
+    .scene {
+      padding: 40px 0; } }
+  @media (min-width: 960px) {
+    .scene article {
+      max-width: 60em;
+      margin: 0 auto; } }
 
 header .fullheight {
   background: url("../images/hotel/splash_hotelphoto.jpg") no-repeat center center fixed;
@@ -167,6 +177,114 @@ header #nav {
               text-align: center; }
               header #nav .navbar ul li a.icon {
                 background-image: none; } }
+
+#welcome {
+  background-image: linear-gradient(#EFC94C, #E27A3F); }
+  #welcome article {
+    text-align: center;
+    max-width: 70%;
+    margin: 0 auto; }
+    @media (min-width: 650px) {
+      #welcome article {
+        max-width: 33em;
+        padding: 60px 0; } }
+  #welcome h1 {
+    font-weight: normal;
+    line-height: 100%;
+    color: #8c4015;
+    padding: 10px 0; }
+  @media (min-width: 650px) {
+    #welcome .gallery {
+      display: grid;
+      grid-column-gap: 1em;
+      grid-template-columns: repeat(4, 1fr); } }
+  @media (min-width: 960px) {
+    #welcome .gallery {
+      grid-template-columns: repeat(5, 1fr);
+      grid-column-gap: .5em; } }
+  #welcome .gallery img {
+    border-radius: 20%;
+    display: none;
+    max-width: 100%; }
+    @media (min-width: 650px) {
+      #welcome .gallery img {
+        display: inline;
+        grid-column: span 1;
+        display: inline; }
+        #welcome .gallery img.hidesm {
+          display: none; } }
+    @media (min-width: 960px) {
+      #welcome .gallery img.hidesm {
+        display: inline; } }
+
+#hotelinfo {
+  background-image: linear-gradient(#3a3f90, #45B29D);
+  color: #FFFFFF; }
+  #hotelinfo h1, #hotelinfo h2, #hotelinfo h3, #hotelinfo h4, #hotelinfo h5, #hotelinfo h6 {
+    color: #FFFFFF; }
+  #hotelinfo .heading h1 {
+    font-size: 3em;
+    font-weight: 200; }
+  @media (min-width: 650px) {
+    #hotelinfo #usefulinfo {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 1.5em; } }
+  @media (min-width: 450px) and (max-width: 650px) {
+    #hotelinfo #usefulinfo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1em; } }
+  @media (min-width: 650px) {
+    #hotelinfo #usefulinfo section {
+      grid-column: span 1; } }
+  @media (min-width: 450px) and (max-width: 650px) {
+    #hotelinfo #usefulinfo section#arrivalinfo {
+      grid-column: 1 / -1;
+      grid-row: 1/2; }
+    #hotelinfo #usefulinfo section.checklist {
+      grid-column: span 1;
+      grid-row: 2/3; } }
+  #hotelinfo #usefulinfo section h2 {
+    color: #b5b7e1;
+    font-size: 1.3em;
+    line-height: 110%;
+    padding: 10px 0; }
+  #hotelinfo #usefulinfo section p {
+    font-size: 1em;
+    line-height: 130%; }
+  #hotelinfo #usefulinfo section ul {
+    list-style-type: square; }
+    #hotelinfo #usefulinfo section ul li {
+      margin-left: 10%;
+      line-height: 115%;
+      margin-bottom: 5px; }
+      #hotelinfo #usefulinfo section ul li:last-of-type {
+        margin-bottom: 0; }
+  #hotelinfo #usefulinfo section#arrivalinfo ul {
+    margin: 0; }
+    #hotelinfo #usefulinfo section#arrivalinfo ul li {
+      list-style-type: none;
+      border-top: 1px solid #FFFFFF;
+      padding: 15px 0;
+      margin-left: 0; }
+      #hotelinfo #usefulinfo section#arrivalinfo ul li strong {
+        color: #EFC94C; }
+      #hotelinfo #usefulinfo section#arrivalinfo ul li:first-child {
+        border-top: none; }
+  #hotelinfo #greenprogram {
+    background-color: rgba(26, 68, 60, 0.8);
+    margin-top: 20px;
+    border: 1px solid #FFFFFF;
+    padding: 20px;
+    border-radius: 20px; }
+    @media (min-width: 1200px) {
+      #hotelinfo #greenprogram {
+        background-image: url("../images/misc/greenplanet.png");
+        background-repeat: no-repeat;
+        background-size: 400px;
+        background-position: 120% center;
+        padding-right: 300px; } }
 
 #rooms {
   /* #piccadilly { @include backImage('../images/hotel/rooms_piccadilly.jpg');}
