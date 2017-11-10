@@ -1,7 +1,6 @@
 
-@mixin backImage($image) {
-    background: url($image) no-repeat center center fixed; 
-    background-size: cover;
+@mixin backImage() {
+    
 } //backImage
 
 @mixin clearfix {
