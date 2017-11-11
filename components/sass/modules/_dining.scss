@@ -2,36 +2,51 @@
 #dining {
    
     h1, h2 {
-        
+        color: $red;
+        padding: 10px 0;
     }
     
     img {
-        
+        width: 100%;
+        border-radius: 10px;
     }//img
     
     @include breakpoint($small) { 
         #areadining {
-           
+            margin-bottom: 30px;   
             
             h1 {
-                
+                font-weight: $thin;
+                font-size: 2.5em;
             }//h1
             
             p {
-                
+                font-size: 1.5em;
+                line-height: 140%;
             }//p
             
         }//areadining
         
+        #inhotel {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 1em;
+        }
+        
         section {
-            
+            grid-column: span 1;    
             
             h2 {
+               font-size: 1.2em;
+                line-height: 120%;
+                color: $pink;
                 
             }//h2
             
             p {
-                
+              padding-top: 10px;
+                font-size: 1em;
+                line-height: 130%;
             }//p
             
         }//section
@@ -39,7 +54,13 @@
     }//brkpt
     
     #roomservice {
-        
+        margin-top: 20px;
+        background-image: linear-gradient($light, lighten($yellow, 35));
+        text-align: center;
+        border-radius: 20px;
+        border-top: 7px solid $red;
+        border-bottom: 7px solid $red;
+        padding: 0 3em;
         
     }//#roomsvc
     

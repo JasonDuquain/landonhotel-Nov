@@ -1,9 +1,24 @@
 
 #attractions {
-    
+    @include clearfix;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    @include backImage("../images/hotel/attractions.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
     article {
+        max-width: 80%;
+        margin: 200px auto 200px auto;
+        padding: 20px;
+        background: rgba($light, .8);
+        border-radius: 10px;
         
+        @include breakpoint($medium) {
+            max-width: 50%;
+        }
     } //article
     
 }//#attractions

@@ -1,34 +1,47 @@
 
 #events {
-    
+    @include breakpoint($small) { 
+        display: grid;
+        grid-template-columns: 1fr 1fr;        
+    }//brkpt    
     
     .event {
+        max-width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: end;
         
         @include breakpoint($small) { 
-            
+            grid-column: span 1;      
         }//brkpt
         
         .content {
-            
+            background: rgba($dark, .7);
+            padding: 20px;
+            color: $light;
+            font-weight: $thin;
+            line-height: 120%;
             
             h2 {
-                
+                color: $light;
+                line-height: 1em;
                 
             }//h2
             
             p {
-                
+                padding: 5px 0;    
             }//p
         } //content
         
     } //event
     
     #businessmeetings {
-        
+        @include backImage("../images/hotel/events_conference.jpg", $bgPos: 65% top, $bgAttach: scroll);     
     } //businessmeetings
     
     #weddings {
-         
+        @include backImage("../images/hotel/events_wedding.jpg", $opStart: .3, $opEnd: .3, $bgPos: 40% top, $bgAttach: scroll);      
     }//weddings
     
     

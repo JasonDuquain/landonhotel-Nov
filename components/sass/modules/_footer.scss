@@ -1,19 +1,25 @@
 
 footer {
-    
+    max-width: 100%;
+    margin: 0 auto;
+    background: lighten($dark, 20);
+    padding: 30px 0;    
     
     #socialmedia {
-        
+        text-align: center;
         
         ul {
-            
+           list-style-type: none; 
             
             li {
-                
+                display: inline-block;
+                padding: 0 10px;
             } //li
             
             img {
-                
+                width: 30px;
+                height: auto;
+                border-radius: 50%;
             }//img
                
         }//ul

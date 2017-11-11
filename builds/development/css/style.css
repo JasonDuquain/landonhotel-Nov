@@ -76,8 +76,14 @@ body {
       margin: 0 auto; } }
 
 header .fullheight {
-  background: url("../images/hotel/splash_hotelphoto.jpg") no-repeat center center fixed;
-  background-size: cover; }
+  background: linear-gradient(to bottom, transparent, transparent), url("../images/hotel/splash_hotelphoto.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 header .hgroup {
   padding: 100px 0; }
   header .hgroup h1 {
@@ -217,6 +223,81 @@ header #nav {
       #welcome .gallery img.hidesm {
         display: inline; } }
 
+@media (min-width: 650px) {
+  #events {
+    display: grid;
+    grid-template-columns: 1fr 1fr; } }
+#events .event {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: end; }
+  @media (min-width: 650px) {
+    #events .event {
+      grid-column: span 1; } }
+  #events .event .content {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: #FFFFFF;
+    font-weight: 200;
+    line-height: 120%; }
+    #events .event .content h2 {
+      color: #FFFFFF;
+      line-height: 1em; }
+    #events .event .content p {
+      padding: 5px 0; }
+#events #businessmeetings {
+  background: linear-gradient(to bottom, transparent, transparent), url("../images/hotel/events_conference.jpg");
+  background-repeat: no-repeat;
+  background-position: 65% top;
+  background-size: cover;
+  background-attachment: scroll; }
+#events #weddings {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/hotel/events_wedding.jpg");
+  background-repeat: no-repeat;
+  background-position: 40% top;
+  background-size: cover;
+  background-attachment: scroll; }
+
+#dining h1, #dining h2 {
+  color: #DF4848;
+  padding: 10px 0; }
+#dining img {
+  width: 100%;
+  border-radius: 10px; }
+@media (min-width: 650px) {
+  #dining #areadining {
+    margin-bottom: 30px; }
+    #dining #areadining h1 {
+      font-weight: 200;
+      font-size: 2.5em; }
+    #dining #areadining p {
+      font-size: 1.5em;
+      line-height: 140%; }
+  #dining #inhotel {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1em; }
+  #dining section {
+    grid-column: span 1; }
+    #dining section h2 {
+      font-size: 1.2em;
+      line-height: 120%;
+      color: #CD0069; }
+    #dining section p {
+      padding-top: 10px;
+      font-size: 1em;
+      line-height: 130%; } }
+#dining #roomservice {
+  margin-top: 20px;
+  background-image: linear-gradient(#FFFFFF, #fefaf0);
+  text-align: center;
+  border-radius: 20px;
+  border-top: 7px solid #DF4848;
+  border-bottom: 7px solid #DF4848;
+  padding: 0 3em; }
+
 #hotelinfo {
   background-image: linear-gradient(#3a3f90, #45B29D);
   color: #FFFFFF; }
@@ -286,12 +367,106 @@ header #nav {
         background-position: 120% center;
         padding-right: 300px; } }
 
-#rooms {
-  /* #piccadilly { @include backImage('../images/hotel/rooms_piccadilly.jpg');}
-   #cambridge { @include backImage('../images/hotel/rooms_cambridge.jpg');}
-   #westminster {@include backImage('../images/hotel/rooms_westminster.jpg');}
-   #oxford {@include backImage('../images/hotel/rooms_oxford.jpg');}
-   #victoria {@include backImage('../images/hotel/rooms_victoria.jpg');}
-   #manchester {@include backImage('../images/hotel/rooms_manchester.jpg');} */ }
+#rooms header {
+  margin-bottom: 20px;
+  width: 90%;
+  margin: 0 auto; }
+  @media (min-width: 960px) {
+    #rooms header {
+      max-width: 60em;
+      margin: 0 auto;
+      padding: 0 5em; } }
+#rooms .room {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #rooms .room .content {
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8); }
+    #rooms .room .content h1 {
+      color: #DF4848; }
+#rooms #piccadilly {
+  background: linear-gradient(to bottom, transparent, transparent), url("../images/hotel/rooms_piccadilly.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed; }
+#rooms #cambridge {
+  background: linear-gradient(to bottom, transparent, transparent), url("../images/hotel/rooms_cambridge.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed; }
+#rooms #westminster {
+  background: linear-gradient(to bottom, transparent, transparent), url("../images/hotel/rooms_westminster.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed; }
+#rooms #oxford {
+  background: linear-gradient(to bottom, transparent, transparent), url("../images/hotel/rooms_oxford.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed; }
+#rooms #victoria {
+  background: linear-gradient(to bottom, transparent, transparent), url("../images/hotel/rooms_victoria.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed; }
+#rooms #manchester {
+  background: linear-gradient(to bottom, transparent, transparent), url("../images/hotel/rooms_manchester.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed; }
+
+#attractions {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background: linear-gradient(to bottom, transparent, transparent), url("../images/hotel/attractions.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  #attractions:before, #attractions:after {
+    content: '';
+    display: table; }
+  #attractions:after {
+    clear: both; }
+  #attractions article {
+    max-width: 80%;
+    margin: 200px auto 200px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px; }
+    @media (min-width: 960px) {
+      #attractions article {
+        max-width: 50%; } }
+
+footer {
+  max-width: 100%;
+  margin: 0 auto;
+  background: #333333;
+  padding: 30px 0; }
+  footer #socialmedia {
+    text-align: center; }
+    footer #socialmedia ul {
+      list-style-type: none; }
+      footer #socialmedia ul li {
+        display: inline-block;
+        padding: 0 10px; }
+      footer #socialmedia ul img {
+        width: 30px;
+        height: auto;
+        border-radius: 50%; }
 
 /*# sourceMappingURL=style.css.map */
